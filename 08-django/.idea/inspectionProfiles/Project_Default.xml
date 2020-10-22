@@ -1,0 +1,14 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="book.models.GENDER_CHOICES" />
+          <option value="book.views.json" />
+          <option value="object.make_cake" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>

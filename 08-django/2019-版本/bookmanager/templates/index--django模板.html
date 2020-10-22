@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<a href="#">{{ username }}</a>
+<hr>
+我的年龄是 {{ age }}
+<hr>
+我总共有{{ firends|length }}个朋友
+我的朋友是 {{ firends }}
+
+我的girl朋友是 {{ firends.2 }}
+<hr>
+<ul>
+{% for item in firends %}
+    <li>{{ forloop.counter }} {{ item }}</li>
+{% endfor %}
+</ul>
+
+<hr>
+{% if age > 10 %}
+    大于10岁
+{% else %}
+    不大于10岁
+{% endif %}
+
+<hr>
+我第一年的月薪是 {{ money.2019 }}
+
+{# 我是注释 #}
+
+{% comment %}
+    你好我也是注释
+{% endcomment %}
+
+<hr>
+{#  过滤器的语法形式:  变量|过滤器:'参数' #}
+我是生日是 {{ birthday|date:'Y年 m月 d日' }}
+
+<hr>
+我的简介是{{ desc|safe }}
+<hr>
+我没有定义的变量{{ abcde|default:':~~~~~~' }}
+</body>
+</html>
